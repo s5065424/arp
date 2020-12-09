@@ -3,7 +3,7 @@ import time
 import datetime
 import random
 import string
-
+# for the input of the data from the user.
 a = int(input("Enter 1st num -> "))
 b = int(input("Enter 2nd num -> "))
 sums = a+b
@@ -11,11 +11,12 @@ seconds =[]
 values=[]
 timestamp = []
 a = time.monotonic()
-
+# For creating time stamp in .xlsx file 
 while(1):
     b = time.monotonic()
     ct = str(datetime.datetime.now())
     ct = ct[0:19]
+    #For creating random letters.
     ch = random.choice(string.ascii_letters)
     if((ch>='a' and ch<= 'y') or (ch>='A' and ch<='Y')):
         sums+=1
@@ -23,6 +24,7 @@ while(1):
         values.append(sums)
         timestamp.append(ct)
         print(sums)
+# User can change the letter.
     if(ch == 'z' or ch == 'Z'):
         df = pd.DataFrame.from_dict({'TimeStamp':timestamp,'Duration': seconds,'Sum Value':values})
         df.to_excel('exported.xlsx', header=True, index=False)
