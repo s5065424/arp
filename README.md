@@ -1,5 +1,5 @@
-#                Assignment-1        (5065424,Adapa rohit)
-# Program composd by two processes using pipe
+#                Assignment-1        (5065424,Rohit Adapa)
+# Program composd by two processes using pipes
 In this program the user inputs two numbers A and B, random signal is sent through the pipe, every time when a signal is sent it computes the sum  of A and B and increment with respect to last time and the out put is stored in a output file in xlsx format
 # Installing and running
 Before excuting the code Machine requires a python 3 installation in the machin and few libraries required they are pandas,time,datetime,random and string.
