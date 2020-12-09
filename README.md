@@ -5,9 +5,13 @@ In this program the user inputs two numbers A and B, random signal is sent throu
 Before excuting the code Machine requires a python 3 installation in the machin and few libraries required they are pandas,time,datetime,random and string.
 
 script to install required libraries (Copy paste the below line in the shell)
+
+
 $ pip3 install pandas && pip3 install time && pip3 install datetime && pip3 install random && pip3 install string
 
 Once the libraries are installed, run the script using (Copy paste the below line in the shell) 
+
+
 $ python3 arp1.py
 
 # Short explanation of the code
